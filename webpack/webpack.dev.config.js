@@ -10,9 +10,9 @@ module.exports = merge(webCommon, {
     port: 8081,
     host: "localhost",
     hot: true,
-    disableHostCheck: true,
+    // disableHostCheck: true,
     // compress: true,
-    contentBase: path.join(__dirname, "../public/"),
+    // contentBase: path.join(__dirname, "../public/"),
     // writeToDisk: true,
   },
   plugins: [
