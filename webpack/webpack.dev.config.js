@@ -14,6 +14,12 @@ module.exports = merge(webCommon, {
     // compress: true,
     // contentBase: path.join(__dirname, "../public/"),
     // writeToDisk: true,
+    proxy: [
+      {
+        context: ['/**'],
+        target: 'htp://localhost:8000'
+      }
+    ]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin({}), // HMR plugin
